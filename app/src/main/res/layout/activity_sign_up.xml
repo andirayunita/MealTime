@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:paddingTop="36dp"
+    android:paddingBottom="24dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let’s create your\nnew account!"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/roboto_bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_signup_txtInputLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/navy"
+            app:errorIconDrawable="@drawable/ic_exclamation"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:elevation="2dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="0.7dp"
+            android:theme="@style/TextInputLayoutStyle"
+            app:hintEnabled="false"
+            app:boxStrokeWidthFocused="0.7dp"
+            android:hint="Full Name"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/activity_signup_edtTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_outline_person"
+                android:hint="Full Name"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_signup_txtInputLayoutUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/navy"
+            app:errorIconDrawable="@drawable/ic_exclamation"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:elevation="2dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="0.7dp"
+            android:theme="@style/TextInputLayoutStyle"
+            app:hintEnabled="false"
+            app:boxStrokeWidthFocused="0.7dp"
+            android:hint="Username"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/activity_signup_edtTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_outline_person"
+                android:hint="Username"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_signup_txtInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/navy"
+            app:errorIconDrawable="@drawable/ic_exclamation"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:elevation="2dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="0.7dp"
+            android:theme="@style/TextInputLayoutStyle"
+            app:hintEnabled="false"
+            app:boxStrokeWidthFocused="0.7dp"
+            android:hint="Email"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/activity_signup_edtTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_email"
+                android:hint="Email"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_signup_txtInputLayoutPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorIconDrawable="@drawable/ic_exclamation"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:elevation="2dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="0.7dp"
+            android:theme="@style/TextInputLayoutStyle"
+            app:hintEnabled="false"
+            app:boxStrokeWidthFocused="0.7dp"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/activity_signup_edtTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_outline_lock"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_signup_txtInputLayoutCPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorIconDrawable="@drawable/ic_exclamation"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:elevation="2dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="0.7dp"
+            android:theme="@style/TextInputLayoutStyle"
+            app:hintEnabled="false"
+            app:boxStrokeWidthFocused="0.7dp"
+            android:layout_marginTop="16dp"
+            android:hint="Confirm Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/activity_signup_edtTextCPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_outline_lock"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/activity_signup_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="I agree with Terms and Conditions."/>
+        <Button
+            android:id="@+id/activity_signup_btnRegister"
+            android:background="@drawable/button_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_black"
+            android:layout_marginTop="10dp"
+            android:text="Register"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"/>
+            <TextView
+                android:id="@+id/activity_signup_textLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_black"
+                android:text="Log in"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

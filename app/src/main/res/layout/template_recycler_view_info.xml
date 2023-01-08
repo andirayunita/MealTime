@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/share_post_textfield_box"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/template_recycler_view_info_image"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dummy_info"/>
+            <ImageView
+                android:layout_alignRight="@+id/template_recycler_view_info_image"
+                android:layout_alignTop="@+id/template_recycler_view_info_image"
+                android:src="@drawable/fav_circle_yellow"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/template_recycler_view_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 Manfaat Sarapan untuk Kesehatan dan Bahayanya Jika Terlewat"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

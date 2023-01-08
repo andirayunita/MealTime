@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/grey_100</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="ErrorTextAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextInputLayoutStyleCustomDialog" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+    </style>
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="MyBase.TimePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:colorAccent">@color/yellow</item>
+        <item name="android:textColorPrimary">@color/yellow</item>
+        <item name="android:numbersInnerTextColor">@color/white</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="actionBarItemBackground">@color/yellow</item>
+        <item name="android:amPmBackgroundColor">@color/yellow</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

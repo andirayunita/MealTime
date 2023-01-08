@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="25dp"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/button_white">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="8"
+        android:minLines="2"
+        android:backgroundTint="@color/white"
+        android:gravity="top"
+        android:drawablePadding="5dp"
+        android:hint="Ada apa hari ini?"
+        android:drawableStart="@drawable/dummy_profile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/custom_dialog_pop_up_alarm_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_primary"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Post"/>
+    </LinearLayout>
+</LinearLayout>

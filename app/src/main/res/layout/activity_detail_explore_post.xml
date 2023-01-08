@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailExplorePostActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="16dp">
+
+        <ImageButton
+            android:id="@+id/activity_detail_explore_post_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/activity_detail_explore_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 Manfaat Sarapan untuk Kesehatan dan Bahayanya Jika Terlewat"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+        <ImageView
+            android:id="@+id/activity_detail_explore_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dummy_info"
+            android:layout_marginVertical="16dp"/>
+
+        <TextView
+            android:id="@+id/activity_detail_explore_post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:justificationMode="inter_word"
+            android:text="Alasan terburu-buru, hingga tidak terbiasa memulai hari dengan sarapan membuat sebagian orang melewatkan sarapan pagi. Padahal, sarapan pagi memiliki banyak manfaat untuk kesehatan tubuh kita. Salah satu manfaat sarapan pagi adalah sebagai sumber energi. Layaknya mobil, Anda butuh juga “bahan bakar” untuk mengembalikan energi setelah tidur malam yang panjang dan menyebabkan perut menjadi kosong. Ini menjadi alasan mengapa sarapan sangat penting dalam memulai hari Anda.
+Nah, tidak makan pagi justru bisa meningkatkan risiko terjadinya obesitas, lho. Ketika tidak sarapan, kamu akan cenderung makan lebih banyak di siang hari serta tergoda untuk makan camilan tinggi lemak dan gula sebagai pengganjal perut. Nah, kebiasaan inilah yang akhirnya membuat berat badan meningkat"/>
+    </LinearLayout>
+
+</LinearLayout>
